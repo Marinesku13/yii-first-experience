@@ -1,0 +1,133 @@
+2016/12/20 14:16:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "index".' in C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CController.php:483
+Stack trace:
+#0 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CController.php(270): CController->missingAction('')
+#1 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): CController->run('')
+#2 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('my')
+#3 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\OpenServer\domains\yii-1.1.17.467ff50\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/?r=my
+---
+2016/12/21 12:55:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "dfgdfg".' in C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('dfgdfg')
+#1 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-1.1.17.467ff50\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/?r=dfgdfg
+---
+2016/12/21 12:55:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "dfgdfg".' in C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('dfgdfg')
+#1 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-1.1.17.467ff50\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/?r=dfgdfg
+---
+2016/12/21 12:55:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "dfgdfg".' in C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('dfgdfg')
+#1 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-1.1.17.467ff50\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/?r=dfgdfg
+---
+2016/12/21 13:21:09 [error] [php] Cannot modify header information - headers already sent by (output started at C:\OpenServer\domains\yii-1.1.17.467ff50\protected\models\Page.php:1) (C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CHttpRequest.php:889)
+Stack trace:
+#0 C:\OpenServer\domains\yii-1.1.17.467ff50\protected\controllers\PageController.php(74): PageController->redirect()
+#1 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): PageController->actionCreate()
+#2 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(133): PageController->runAction()
+#4 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#6 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\filters\CInlineFilter.php(58): PageController->filterAccessControl()
+#7 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CController.php(291): CFilterChain->run()
+#9 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CController.php(265): PageController->runActionWithFilters()
+#10 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): PageController->run()
+#11 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\OpenServer\domains\yii-1.1.17.467ff50\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=page/create
+in C:\OpenServer\domains\yii-1.1.17.467ff50\protected\controllers\PageController.php (74)
+in C:\OpenServer\domains\yii-1.1.17.467ff50\index.php (13)
+2016/12/21 15:03:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "hello".' in C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('hello')
+#1 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-1.1.17.467ff50\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=hello
+---
+2016/12/21 15:03:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "hello".' in C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('hello')
+#1 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-1.1.17.467ff50\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/?r=hello
+---
+2016/12/21 15:04:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "hello".' in C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('hello')
+#1 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-1.1.17.467ff50\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/?r=hello
+---
+2016/12/21 15:04:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "hello".' in C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('hello')
+#1 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-1.1.17.467ff50\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/?r=hello
+---
+2016/12/21 15:04:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "hello".' in C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('hello')
+#1 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-1.1.17.467ff50\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/?r=hello
+---
+2016/12/21 15:04:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "hello".' in C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController('hello')
+#1 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\OpenServer\domains\yii-1.1.17.467ff50\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/?r=hello
+---
+2016/12/28 22:48:39 [error] [php] include(WebUser.php): failed to open stream: No such file or directory (C:\OpenServer\domains\yii-1.1.17.467ff50\framework\YiiBase.php:432)
+Stack trace:
+#0 unknown(0): spl_autoload_call()
+#1 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\YiiBase.php(303): class_exists()
+#2 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\YiiBase.php(196): import()
+#3 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\base\CModule.php(393): createComponent()
+#4 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\base\CModule.php(103): CWebApplication->getComponent()
+#5 C:\OpenServer\domains\yii-1.1.17.467ff50\protected\views\layouts\main.php(35): CWebApplication->__get()
+#6 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CBaseController.php(126): require()
+#7 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#8 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\widgets\CContentDecorator.php(76): SiteController->renderFile()
+#9 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#10 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#11 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CBaseController.php(214): CContentDecorator->run()
+#12 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CBaseController.php(308): SiteController->endWidget()
+#13 C:\OpenServer\domains\yii-1.1.17.467ff50\protected\views\layouts\column1.php(6): SiteController->endContent()
+#14 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CBaseController.php(126): require()
+#15 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#16 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CController.php(784): SiteController->renderFile()
+#17 C:\OpenServer\domains\yii-1.1.17.467ff50\protected\controllers\SiteController.php(32): SiteController->render()
+#18 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#19 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CController.php(286): SiteController->runAction()
+#21 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#22 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php(282): SiteController->run()
+#23 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 C:\OpenServer\domains\yii-1.1.17.467ff50\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\OpenServer\domains\yii-1.1.17.467ff50\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in C:\OpenServer\domains\yii-1.1.17.467ff50\protected\views\layouts\main.php (35)
+in C:\OpenServer\domains\yii-1.1.17.467ff50\protected\views\layouts\column1.php (6)
+in C:\OpenServer\domains\yii-1.1.17.467ff50\protected\controllers\SiteController.php (32)
